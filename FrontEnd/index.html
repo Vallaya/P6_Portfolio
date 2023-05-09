@@ -6,19 +6,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<script src="https://kit.fontawesome.com/cda5a58c76.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
 	<meta name="description" content="">
 	<link rel="stylesheet" href="./assets/style.css">
 	<script src="./assets/script.js"></script>
 </head>
 <body>
+	<section class="publications">
+		<p><i class="fa-regular fa-pen-to-square"></i>Mode édition</p>
+		<a href="modal1" class="publier_changement">publier les changements</a>
+		<aside id="modal1" class="modal" aria-hidden="true" role="dialog" aria-modal="">
+			<div class="modal_wrapper">
+				<h3 id="title_modal">Galerie photo</h3>
+				<div class="editer_modal">
+				</div>
+				<a href="">Ajouter une photo</a>
+				<a href="">Supprimer la galerie</a>
+			</div>
+		</aside>
+	</section>
 <header>
 	<h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
 	<nav>
 		<ul>
 			<li>projets</li>
 			<li>contact</li>
-			<li>login</li>
+			<li><a href="./pages/login.html">login</a></li>
 			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
 		</ul>
 	</nav>
@@ -37,6 +51,12 @@
 	</section>
 	<section id="portfolio">
 		<h2>Mes Projets</h2>
+		<div class="filters">
+			<button class="button_filter tous">Tous</button>
+			<button class="button_filter objets">Objets</button>
+			<button class="button_filter appartements">Appartements</button>
+			<button class="button_filter hotels_restaurants">Hôtels & restaurants</button>
+		</div>
 		<div class="gallery"></div>
 	</section>
 	<section id="contact">
