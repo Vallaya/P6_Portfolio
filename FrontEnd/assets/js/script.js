@@ -1,3 +1,4 @@
+//TODO: Besoin d'une petite refacto je pense 
 fetch('http://localhost:5678/api/works')
   .then(response => response.json())
   .then(data => {

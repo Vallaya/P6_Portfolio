@@ -8,8 +8,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
 	<meta name="description" content="">
-	<link rel="stylesheet" href="../assets/login.css">
-    <script src="../assets/login.js"></script>
+	<link rel="stylesheet" href="../assets/css/login.css">
+  <script type="module" src="../assets/js/login.js"></script>
 </head>
 <body>
     <header>
@@ -25,20 +25,25 @@
     </header>
     <section class="connexion">
         <h2>Log In</h2>
-        <form action="#" class="form_connexion">
+        <div class="form_connexion">
+          <div class="authMessage">
+            <span>
+              Credentials error
+            </span>
+          </div>
             <div class="info_connexion">
               <label for="E-mail">E-mail</label>
-              <input class="emailAddress" type="email" name="E-mail">
+              <input class="emailAddress" type="email" name="E-mail" value="sophie.bluel@test.tld" />
             </div>
             <div class="info_connexion">
               <label for="Mot de passe">Mot de passe</label>
-              <input class="password" type="text" name="Mot de passe">
+              <input class="password" type="text" name="Mot de passe" value="S0phie" />
             </div>
             <div class="button_connexion">
               <input type="submit" value="Se connecter" class="loginButton">
               <a href="">Mot de passe oublié</a>
             </div>
-          </form>
+          </div>
     </section>
 <footer>
 	<nav>
